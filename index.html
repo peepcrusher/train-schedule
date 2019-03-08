@@ -9,8 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <!-- Added local javascript -->
-    <script src="assets/javascript/javascript.js"></script>
+    
     <!-- Added Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,6 +41,7 @@
         </table>
 
         <!-- Train Table ends -->
+
         <!-- Form Input begins -->
         <form class="border">
             <div class="form-group p-2">
@@ -54,16 +54,18 @@
             </div>
             <div class="form-group p-2">
                 <label for="exampleFormControlInput1">First Train time (HH:mm military time)</label>
-                <input type="text" class="form-control" id="first-train" >
+                <input type="time" class="form-control" id="first-train" >
             </div>
             <div class="form-group p-2">
                 <label for="exampleFormControlInput1">Frequency (min)</label>
-                <input type="text" class="form-control" id="frequency" >
+                <input type="number" class="form-control" id="frequency" >
             </div>
-            <button type="submit" class="btn btn-dark m-2">Dark</button>
+            <button type="submit" class="btn btn-dark m-2" id="submit-train">Add train</button>
         </form>
 
     </div>
+
+    <script src="assets/javascript/javascript.js"></script>
 </body>
 
 </html>
