@@ -64,7 +64,6 @@ $("#submit-train").on("click", function (event) {
         tillNextTrain: tillNextTrain,
     });
 
-   $(".train-inputs").reset();
 });
 
 //create a listener for on_child
@@ -84,3 +83,22 @@ database.ref().on("child_added", function (snapshot) {
 
 //display the information stored in firebase, to the DOM
 //using Jquery create table rows for each data point and append them to the DOM
+
+
+// (function() {
+//     'use strict';
+//     window.addEventListener('load', function() {
+//       // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//       var forms = document.getElementsByClassName('needs-validation');
+//       // Loop over them and prevent submission
+//       var validation = Array.prototype.filter.call(forms, function(form) {
+//         form.addEventListener('submit', function(event) {
+//           if (form.checkValidity() === false) {
+//             event.preventDefault();
+//             event.stopPropagation();
+//           }
+//           form.classList.add('was-validated');
+//         }, false);
+//       });
+//     }, false);
+//   })();
